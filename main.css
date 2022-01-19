@@ -1,0 +1,184 @@
+body, html {
+	height: 100%;
+}
+
+a {
+	color: inherit;
+}
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.desc ul {
+	list-style: disc inside;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+body {
+	margin: 0;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.42;
+	font-size: 14px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1140px;
+}
+
+.menu {
+	list-style: none;
+	display: flex;
+}
+
+.menu-item {
+	/* margin: 0 10px 0 0; */
+	margin-right: 50px;
+}
+
+.menu-link {
+	text-decoration: none;
+}
+
+.menu-link:hover {
+	text-decoration: underline;
+}
+
+.hero {
+	margin-bottom: 105px;
+}
+
+.hero-img {
+	height: 570px;
+}
+
+.hero-img img {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.title {
+	font-family: 'Cormorant', Times, serif;
+	text-transform: uppercase;
+	font-size: 36px;
+}
+
+.about-content {
+	padding: 30px 440px 360px 50px;
+	background: url(./images/appt-1.jpeg) right top / 366px auto no-repeat,
+	url(./images/appt-2.jpg) right 500px bottom / 366px auto no-repeat;
+}
+
+.services {
+	min-height: 636px;
+	background: #f5eee6;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding-bottom: 332px;
+}
+
+.services-cover {
+	width: 540px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.services-content {
+	margin-top: 135px;
+	margin-right: 95px;
+	position: relative;
+}
+
+.services-content::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	height: 592px;
+	background: url(./images/rack.jpeg) center center / cover no-repeat;
+	margin-top: 121px;
+}
+
+.rack-picture {
+	width: 366px;
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+}
+
+.prices {
+	padding-top: 92px;
+	padding-left: 100px;
+	width: 502px;
+	min-height: 400px;
+}
+
+.btm {
+	padding: 10px 40px;
+	border: 1px solid black;
+	background: transparent;
+	cursor: pointer;
+	border-radius: 100px;
+}
+
+.gallery {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.gallery-container {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding: 73px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.gallery-list {
+	display: flex;
+}
+
+.gallery-item {
+	width: 174px;
+	height: 174px;
+	margin-right: 10px;
+}
+
+.gallery-item last-child {
+	margin-right: 0;
+}
+
+.gallery-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container-ending {
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+}
